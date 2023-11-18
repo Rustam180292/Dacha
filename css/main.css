@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+:root {
+  --whiteColor: #fff;
+  --blackColor: #333;
+  --orangeColor: #F4683F;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+:root {
+  --whiteColor: #fff;
+  --blackColor: #333;
+  --orangeColor: #F4683F;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header-intro {
+  background-image: url(../../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 949px;
+}
+
+/*# sourceMappingURL=main.css.map */
