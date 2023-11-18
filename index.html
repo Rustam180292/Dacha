@@ -19,7 +19,7 @@
         <header class="header">
             <div class="header-conatiner container">
                <nav class="header__nav">
-                <div class="header-logo">
+                 <div class="header-logo">
                     <a href="#"><img src="images/logo_dark.svg" alt=""></a>
                     <div class="header-catalog">
                         <i class="fa-solid fa-location-dot" style="color: #f4683f;"></i>
@@ -28,10 +28,10 @@
                         </select>
                         <button class="select-btn">Каталог</button>
                     </div>
-                </div>
+                 </div>
 
                 
-                <div class="header__nav-list">
+                 <div class="header__nav-list">
                     <a href="#">Частые вопросы</a>
                     <a href="#">Сотрудничество</a>
                     <a href="#">
@@ -42,8 +42,7 @@
                     <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
                         Поиск по названию
                     </a>
-                    
-                </div>
+                 </div>
                </nav>   
             </div>
         </header>
@@ -59,17 +58,49 @@
                 <div class="intro-filter">
                     <div class="filter-content-app">
                         <span>
-                            <p>Въезд</p>
-                            <p>Отъезд</p>
+                            <label for="">Въезд</label>
+                            <input class="left-input" type="text" name="" id="" placeholder="От">
                         </span>
-                        <input type="text">
-                        <input type="text">
+                        <span>
+                            <label for="">Отъезд</label>
+                            <input class="right-input" type="text" name="" id="" placeholder="До">
+                        </span>
+                    </div>
+                    <div class="filter-count">
+                        <label for="">Количество человек</label>
+                        <input class="count-input" type="text" placeholder="12">
+                    </div>
+                    <div class="double-slider-box">
+                        <div class="range-slider">
+                            <span class="slider-track"></span>
+                            <input type="range" name="min_val" class="min_val" min="1000" max="12000" value="2000">
+                            <input type="range" name="max_val" class="max_val" min="1000" max="12000" value="7000">
+                            <div class="tooltip min-tooltip"></div>
+                            <div class="tooltip max-tooltip"></div>
+                        </div>
+                        <div class="input-box">
+                            <div class="min-box">
+                                <div class="input-wrap">
+                                    <span class="input-addon">$</span>
+                                    <input type="text" name="min-input"   class="input-field min-input">
+                                </div>
+                            </div>
+                            <div class="max-box">
+                                <div class="input-wrap">
+                                    <span class="input-addon">$</span>
+                                    <input type="text" name="max-input" class="input-field max-input">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script src="js/main.js"></script>
+
 </body>
 </html>
+
+
