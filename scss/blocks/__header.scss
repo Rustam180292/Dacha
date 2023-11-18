@@ -5,4 +5,103 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 949px;
+
+    .header {
+        width: 100%;
+        padding: 2rem;
+        .header__nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-logo{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            a{
+                width: 183px;
+                height: 24px;
+            }
+        }
+        &-catalog {
+            select {
+                border: none;
+                background-color: transparent;
+                color: var(--whiteColor);
+            }
+            .select-btn{
+                width: 99px;
+                height: 40px;
+                border-radius: 200px;
+                border: none;
+                background-color: var(--orangeColor);
+                color: var(--whiteColor);
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+        .header__nav-list {
+            a{
+                color: var(--whiteColor);
+                font-size: 14px;
+                font-weight: 600;
+                
+            }
+            display: flex;
+            gap: 15px; 
+        }
+    }
+
+   .header-intro-content{
+    width: 100%;
+    display: flex;
+    .header-intro-leftside {
+        margin-top: 165px;
+        width: 50%;
+        padding-left: 65px;
+        .intro-title {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: var(--whiteColor);
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 800;
+                font-size: 56px;
+                line-height: 140%;
+                letter-spacing: 1.12px;
+            }
+            p{
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 150%;
+            }
+        }
+    }
+
+
+
+    .header-intro-rightside {
+        width: 50%;
+        margin-top: 189px;
+        padding-right: 165px;
+        display: flex;
+        justify-content: center;
+
+        .intro-filter {
+            width: 360px;
+            height: 429px;
+            padding: 59px 40px 40px 50px;
+            background-color: var(--whiteColor);
+            border-radius: 20px;
+
+            
+        }
+    }
+   }
 }
+
+

@@ -70,5 +70,91 @@ ul {
   background-size: cover;
   height: 949px;
 }
+.header-intro .header {
+  width: 100%;
+  padding: 2rem;
+}
+.header-intro .header .header__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-intro .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-intro .header-logo a {
+  width: 183px;
+  height: 24px;
+}
+.header-intro .header-catalog select {
+  border: none;
+  background-color: transparent;
+  color: var(--whiteColor);
+}
+.header-intro .header-catalog .select-btn {
+  width: 99px;
+  height: 40px;
+  border-radius: 200px;
+  border: none;
+  background-color: var(--orangeColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.header-intro .header .header__nav-list {
+  display: flex;
+  gap: 15px;
+}
+.header-intro .header .header__nav-list a {
+  color: var(--whiteColor);
+  font-size: 14px;
+  font-weight: 600;
+}
+.header-intro .header-intro-content {
+  width: 100%;
+  display: flex;
+}
+.header-intro .header-intro-content .header-intro-leftside {
+  margin-top: 165px;
+  width: 50%;
+  padding-left: 65px;
+}
+.header-intro .header-intro-content .header-intro-leftside .intro-title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--whiteColor);
+}
+.header-intro .header-intro-content .header-intro-leftside .intro-title h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 140%;
+  letter-spacing: 1.12px;
+}
+.header-intro .header-intro-content .header-intro-leftside .intro-title p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.header-intro .header-intro-content .header-intro-rightside {
+  width: 50%;
+  margin-top: 189px;
+  padding-right: 165px;
+  display: flex;
+  justify-content: center;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter {
+  width: 360px;
+  height: 429px;
+  padding: 59px 40px 40px 50px;
+  background-color: var(--whiteColor);
+  border-radius: 20px;
+}
 
 /*# sourceMappingURL=main.css.map */
