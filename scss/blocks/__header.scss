@@ -80,6 +80,18 @@
                 line-height: 150%;
             }
         }
+        .slider-wrapper {
+            width: 600px;
+            height: 300px;
+            border: 1px solid;
+
+            .image-slider {
+                padding: 30px 0 70px 0;
+            }
+            .swiper-slide {
+                width: 160px;
+            }
+        }
     }
 
 
@@ -251,6 +263,8 @@
            }
         }
     }
+
+    
    }
 }
 

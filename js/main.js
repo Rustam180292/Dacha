@@ -37,3 +37,6 @@ rangeInput.forEach(input =>{
     });
 });
 
+
+
+
