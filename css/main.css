@@ -157,6 +157,7 @@ ul {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
   justify-content: space-around;
 }
 .header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-content-app {
@@ -165,11 +166,18 @@ ul {
 .header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-content-app span {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-content-app span label {
+  margin-left: 10px;
 }
 .header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-content-app span input {
   height: 40px;
   border-radius: 1px solid #C0C2D7;
   background-color: var(--whiteColor);
+  background-image: url(../../images/Rectangle\ 14.svg);
+  background-repeat: no-repeat;
+  background-position: 0%;
 }
 .header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-content-app span .left-input {
   padding-left: 10px;
@@ -185,11 +193,103 @@ ul {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-count {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-count label {
+  margin-left: 10px;
+}
 .header-intro .header-intro-content .header-intro-rightside .intro-filter .filter-count .count-input {
   padding-left: 10px;
   width: 280px;
   height: 40px;
   border-radius: 20px;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .slider {
+  border: 0.5px solid;
+  position: relative;
+  background: #ddd;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .range-input {
+  position: relative;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -3px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .range-input input[type=range]::-webkit-slider-thumb {
+  height: 23px;
+  width: 8px;
+  border-radius: 20px;
+  background: #F4683F;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .range-input input[type=range]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .price-input {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .price-input .field {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .price-input .field input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .price-input .field input[type=number]::-webkit-outer-spin-button,
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .wrapper .price-input .field input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.header-intro .header-intro-content .header-intro-rightside .intro-filter .intro-btn {
+  width: 280px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background: var(--orangeColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -99,20 +99,28 @@
             border-radius: 20px;
             display: flex;
             flex-direction: column;
-            // gap: 30px;
+            gap: 30px;
             justify-content: space-around;
 
             .filter-content-app{
                 display: flex;
+                // justify-content: center;
+                // text-align: center;
                 
                 span{
                     display: flex;
                     flex-direction: column;
+                    gap: 8px;
+                    label {
+                        margin-left: 10px;
+                    }
                     input {
                         height: 40px;
-                        
                         border-radius: 1px solid #C0C2D7;
                         background-color: var(--whiteColor);
+                        background-image: url(../../images/Rectangle\ 14.svg);
+                        background-repeat: no-repeat;
+                        background-position: 0%;
                     }
                     .left-input{
                         padding-left: 10px;
@@ -136,6 +144,12 @@
                 
             }
             .filter-count {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                label {
+                    margin-left: 10px;
+                }
                 .count-input {
                     padding-left: 10px;
                     width: 280px;
@@ -144,13 +158,97 @@
                 }
                 
             }
-           
-           
-            
-            
-           
-           
-            
+
+           .wrapper {
+            display: flex;
+            flex-direction: column;
+            // padding: 10px;
+            // gap: 10px;
+            .slider {
+                border: 0.5px solid;
+                position: relative;
+                background: #ddd;
+                // height: 5px;
+                .progress {
+                    height: 100%;
+                    left: 25%;
+                    right: 25%;
+                    position: absolute;
+                }
+            }
+
+            .range-input {
+                position: relative;
+                input {
+                    position: absolute;
+                    width: 100%;
+                    height: 5px;
+                    top: -3px;
+                    background: none;
+                    pointer-events: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                }
+                input[type= "range"]::-webkit-slider-thumb{
+                    height: 23px;
+                    width: 8px;
+                    border-radius: 20px;
+                    background:  #F4683F;
+                    pointer-events: auto;
+                    -webkit-appearance: none;
+                    box-shadow: 0 0 6px rgba(0,0,0,0.05)
+                }
+                input[type= "range"]::-moz-range-thumb{
+                    height: 17px;
+                    width: 17px;
+                    border: none;
+                    border-radius: 50%;
+                    background: #17A2B8;
+                    pointer-events: auto;
+                    -moz-appearance: none;
+                    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+                }
+
+            }
+             .price-input {
+                display: flex;
+                width: 100%;
+                // margin: 30px 0 35px;
+                margin-top: 10px;
+                .field {
+                    display: flex;
+                    width: 100%;
+                    height: 45px;
+                    align-items: center;
+                    input {
+                        border: none;
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        font-size: 19px;
+                        margin-left: 12px;
+                        text-align: center;
+                        -moz-appearance: textfield;
+                    }
+                    input[type ="number"]::-webkit-outer-spin-button,
+                    input[type = "number"]::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                }
+             }
+           }
+           .intro-btn{
+            width: 280px;
+            height: 50px;
+            border-radius: 30px;
+            border: none;
+            background: var(--orangeColor);
+            color: var(--whiteColor);
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 150%;
+           }
         }
     }
    }
