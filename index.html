@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Jquery -->
+    <link
+       rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="css/main.css">
     <!-- FONT AWESOME -->
@@ -12,10 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <!-- Jquery -->
-    <link
-       rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
     <title>Document</title>
 </head>
 <body>
@@ -56,26 +57,30 @@
                     <h1>Аренда коттеджей и домов в Казани</h1>
                     <p>Найдите идеальный вариант сами <br> или предоставьте это нам</p>
                 </div>
-                <div class="slider-wrapper">
-                    <div class="image-slider swiper-container">
-                        <div class="image-slider__wrapper swiper-wrapper">
-                            <div class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img src="images/photo 1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img src="images/photo 1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img src="images/photo 1.jpg" alt="">
-                                </div>
-                            </div>
+
+                <div class="slider-box">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="images/photo 1.svg" alt=""></div>
+                          <div class="swiper-slide"><img src="images/photo 2.svg" alt=""></div>
+                          <div class="swiper-slide"><img src="images/photo 3.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="images/photo 1.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="images/photo 1.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="images/photo 1.jpg" alt=""></div>
+                          
                         </div>
-                    </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                      </div>
                 </div>
             </div>
     
